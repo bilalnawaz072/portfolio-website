@@ -1,5 +1,7 @@
-export const HeroSection = (props) => {
+export const HeroSection = ({ title ,description,descriptionDetail,buttonName }) => {
+
   return (
+    <>
     <div className="bg-slate-900">
       <div className="bg-gradient-to-b from-violet-600/[.15] via-transparent">
         <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-24 space-y-8">
@@ -8,7 +10,7 @@ export const HeroSection = (props) => {
               className="group inline-block bg-white/[.05] hover:bg-white/[.1] border border-white/[.05] p-1 pl-4 rounded-full shadow-md"
               href="#">
               <p className="mr-2 inline-block text-white text-sm">
-               {props.title}
+               {title}
               </p>
               <span className="group-hover:bg-white/[.1] py-2 px-3 inline-flex justify-center items-center gap-x-2 rounded-full bg-white/[.075] font-semibold text-white text-sm">
                 <span className="w-fit">
@@ -31,20 +33,19 @@ export const HeroSection = (props) => {
           </div>
           <div className="max-w-3xl text-center mx-auto">
             <h1 className="block font-medium text-gray-200 text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
-              Now it's easier than ever to build products
+             {description}
             </h1>
           </div>
           <div className="max-w-3xl text-center mx-auto">
             <p className="text-lg text-gray-400">
-              Preline is a large open-source project, crafted with Tailwind CSS
-              framework by Hmlstream.
+             {descriptionDetail}
             </p>
           </div>
           <div className="text-center">
             <a
               className="inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 shadow-lg shadow-transparent hover:shadow-blue-700/50 border border-transparent text-white text-sm font-medium rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white py-3 px-6 dark:focus:ring-offset-gray-800"
               href="#">
-              <span>Get started </span>
+              <span>{buttonName}</span>
               <span className="w-fit">
                 <svg
                   className="w-2.5 h-2.5"
@@ -65,6 +66,70 @@ export const HeroSection = (props) => {
         </div>
       </div>
     </div>
+    <div className="container mx-auto px-4">
+        <div className="-mx-4 flex flex-wrap items-center justify-center">
+          <div className="px-4 py-12 w-full xl:order-last xl:w-6/12">
+            <nav className="py-2 sticky top-0 z-50">
+              <div className="container mb-12 mx-auto relative">
+                <nav className="flex flex-wrap items-center">
+                  <a
+                    className="font-bold font-serif hover:text-opacity-75 inline-flex items-center leading-none mr-4 space-x-1 text-white text-xl uppercase"
+                    href="#">
+                    <span>Cody Coolhair</span>
+                  </a>
+                  <button className="hover:bg-secondary-500 hover:text-white lg:hidden ml-auto px-3 py-2 rounded text-white">
+                    <div className="block border-b-2 border-current my-1 w-6"></div>
+                    <div className="block border-b-2 border-current my-1 w-6"></div>
+                    <div className="block border-b-2 border-current my-1 w-6"></div>
+                  </button>
+                  <div className="flex-1 hidden space-y-2 w-full lg:flex lg:items-center lg:space-x-4 lg:space-y-0 lg:w-auto">
+                    <div className="flex flex-col ml-auto lg:flex-row">
+                      <a
+                        className="hover:text-gray-300 py-2 text-gray-400 lg:p-4"
+                        href="#">
+                        <span>About</span>
+                      </a>
+                      <a
+                        className="hover:text-gray-300 py-2 text-gray-400 lg:p-4"
+                        href="#">
+                        <span>Services</span>
+                      </a>
+                      <a
+                        className="hover:text-gray-300 py-2 text-gray-400 lg:p-4"
+                        href="#">
+                        <span>Projects</span>
+                      </a>
+                      <a
+                        className="hover:text-gray-300 py-2 text-gray-400 lg:p-4"
+                        href="#">
+                        <span>Contact</span>
+                      </a>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+            </nav>
+            <h1 className="font-bold mb-2 text-4xl text-white md:leading-tight lg:text-5xl">
+              Cody Coolhair, a self taught web developer well versed in Visual
+              Design.
+            </h1>
+            <p className="mb-6">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+              pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet.
+              Curabitur ac sagittis neque, vel egestas est.
+            </p>
+            <a
+              className="bg-primary-500 hover:bg-primary-400 inline-block px-6 py-2 rounded text-white"
+              href="#">
+              <span>Let's Talk</span>
+            </a>
+          </div>
+          <div className="px-4 w-full xl:px-12 xl:w-6/12">
+            <img src="https://images.unsplash.com/photo-1618088129969-bcb0c051985e?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDEwM3x8bW9kZWwlMjBtYW58ZW58MHx8fHwxNjMyODUxNzQ5&ampixlib=rb-1.2.1q=85&amp;fm=jpg&amp;crop=faces&amp;cs=srgb&amp;w=800&amp;h=1000&amp;fit=crop" />
+          </div>
+        </div>
+      </div>
+    </>
   )
 }
 export default HeroSection;

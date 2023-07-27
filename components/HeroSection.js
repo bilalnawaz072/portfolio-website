@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export const HeroSection = ({ title ,description,descriptionDetail,buttonName }) => {
 
   return (
@@ -9,11 +11,12 @@ export const HeroSection = ({ title ,description,descriptionDetail,buttonName })
             <a
               className="group inline-block bg-white/[.05] hover:bg-white/[.1] border border-white/[.05] p-1 pl-4 rounded-full shadow-md"
               href="#">
-              <p className="mr-2 inline-block text-white text-sm">
-               {title}
-              </p>
-              <span className="group-hover:bg-white/[.1] py-2 px-3 inline-flex justify-center items-center gap-x-2 rounded-full bg-white/[.075] font-semibold text-white text-sm">
-                <span className="w-fit">
+            <p className="mr-2 inline-block text-white text-sm">
+              {title}
+            </p>
+            
+              <p className="group-hover:bg-white/[.1] py-2 px-3 inline-flex justify-center items-center gap-x-2 rounded-full bg-white/[.075] font-semibold text-white text-sm">
+                <p className="w-fit">
                   <svg
                     className="w-2.5 h-2.5"
                     width="16"
@@ -27,8 +30,8 @@ export const HeroSection = ({ title ,description,descriptionDetail,buttonName })
                       strokeWidth="2"
                       strokeLinecap="round"></path>
                   </svg>
-                </span>
-              </span>
+                </p>
+              </p>
             </a>
           </div>
           <div className="max-w-3xl text-center mx-auto">
@@ -45,8 +48,8 @@ export const HeroSection = ({ title ,description,descriptionDetail,buttonName })
             <a
               className="inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 shadow-lg shadow-transparent hover:shadow-blue-700/50 border border-transparent text-white text-sm font-medium rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white py-3 px-6 dark:focus:ring-offset-gray-800"
               href="#">
-              <span>{buttonName}</span>
-              <span className="w-fit">
+              <p>{buttonName}</p>
+              <p className="w-fit">
                 <svg
                   className="w-2.5 h-2.5"
                   width="16"
@@ -60,7 +63,7 @@ export const HeroSection = ({ title ,description,descriptionDetail,buttonName })
                     strokeWidth="2"
                     strokeLinecap="round"></path>
                 </svg>
-              </span>
+              </p>
             </a>
           </div>
         </div>
@@ -75,7 +78,7 @@ export const HeroSection = ({ title ,description,descriptionDetail,buttonName })
                   <a
                     className="font-bold font-serif hover:text-opacity-75 inline-flex items-center leading-none mr-4 space-x-1 text-white text-xl uppercase"
                     href="#">
-                    <span>Cody Coolhair</span>
+                    <p>Cody Coolhair</p>
                   </a>
                   <button className="hover:bg-secondary-500 hover:text-white lg:hidden ml-auto px-3 py-2 rounded text-white">
                     <div className="block border-b-2 border-current my-1 w-6"></div>
@@ -87,22 +90,22 @@ export const HeroSection = ({ title ,description,descriptionDetail,buttonName })
                       <a
                         className="hover:text-gray-300 py-2 text-gray-400 lg:p-4"
                         href="#">
-                        <span>About</span>
+                        <p>About</p>
                       </a>
                       <a
                         className="hover:text-gray-300 py-2 text-gray-400 lg:p-4"
                         href="#">
-                        <span>Services</span>
+                        <p>Services</p>
                       </a>
                       <a
                         className="hover:text-gray-300 py-2 text-gray-400 lg:p-4"
                         href="#">
-                        <span>Projects</span>
+                        <p>Projects</p>
                       </a>
                       <a
                         className="hover:text-gray-300 py-2 text-gray-400 lg:p-4"
                         href="#">
-                        <span>Contact</span>
+                        <p>Contact</p>
                       </a>
                     </div>
                   </div>
@@ -121,11 +124,11 @@ export const HeroSection = ({ title ,description,descriptionDetail,buttonName })
             <a
               className="bg-primary-500 hover:bg-primary-400 inline-block px-6 py-2 rounded text-white"
               href="#">
-              <span>Let's Talk</span>
+              <p>Lets Talk</p>
             </a>
           </div>
           <div className="px-4 w-full xl:px-12 xl:w-6/12">
-            <img src="https://images.unsplash.com/photo-1618088129969-bcb0c051985e?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDEwM3x8bW9kZWwlMjBtYW58ZW58MHx8fHwxNjMyODUxNzQ5&ampixlib=rb-1.2.1q=85&amp;fm=jpg&amp;crop=faces&amp;cs=srgb&amp;w=800&amp;h=1000&amp;fit=crop" />
+            <Image src="/imran.jpg" alt="Cody Coolhair" width={600} height={600} className="rounded-lg" />
           </div>
         </div>
       </div>

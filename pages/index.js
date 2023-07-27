@@ -17,9 +17,9 @@ export default function Home() {
 
       <AboutSection 
       pageName='About Me'
-      description={`Whether a medieval typesetter chose to garble a well-known (but
-        non-Biblical—that would have been sacrilegious) text, or whether a
-        quirk in the 1914 Loeb Edition inspired a graphic designer, it's
+      description={`Whether a medieval typesetter chose to garble a well-known but
+        non Biblical—that would have been sacrilegious text, or whether a
+        quirk in the 1914 Loeb Edition inspired a graphic designer, it is
         admittedly an odd way for Cicero to sail into the 21st century.`}
       project1=' Built on Tailwind CSS v3.0'
       projectDetail={`Startup generator offers a valid Bootstrap page and

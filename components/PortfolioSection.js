@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Image from 'next/image';
 const PortfolioSection = () => {
   return (
     <>
@@ -15,34 +15,34 @@ const PortfolioSection = () => {
         <div className="-mx-4 flex flex-wrap">
           <div className="mb-12 px-4 w-full md:w-6/12">
             <a className="block group rounded-lg" href="#">
-              <img
-                className="group-hover:opacity-80 mb-6 rounded-xl"
-                src="https://images.unsplash.com/photo-1609921212029-bb5a28e60960?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDUyfHxkZXNpZ25lcnxlbnwwfHx8fDE2MzI4Njk1ODY&ampixlib=rb-1.2.1q=85&amp;fm=jpg&amp;crop=faces&amp;cs=srgb&amp;w=600&amp;h=650&amp;fit=crop"
-              />
+            <Image
+                className="-mt-12 mb-4 rounded-lg"
+                src="/imran.jpg" alt="Cody Coolhair" width={200} height={200}
+                />
             </a>
           </div>
           <div className="mb-12 px-4 w-full md:-mt-24 md:w-6/12">
             <a className="block group rounded-lg" href="#">
-              <img
-                className="group-hover:opacity-80 mb-6 rounded-xl"
-                src="https://images.unsplash.com/photo-1605067063351-f81bc6041251?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDU3fHxkZXNpZ25lcnxlbnwwfHx8fDE2MzI4Njk1ODY&amp;ixlib=rb-1.2.1q=85&amp;fm=jpg&amp;crop=faces&amp;cs=srgb&amp;w=600&amp;h=650&amp;fit=crop"
-              />
+            <Image
+                className="-mt-12 mb-4 rounded-lg"
+                src="/imran.jpg" alt="Cody Coolhair" width={200} height={200}
+                />
             </a>
           </div>
           <div className="mb-12 px-4 w-full md:w-6/12">
             <a className="block group rounded-lg" href="#">
-              <img
-                className="group-hover:opacity-80 mb-6 rounded-xl"
-                src="https://images.unsplash.com/photo-1519211975560-4ca611f5a72a?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDY3fHx3ZWJzaXRlfGVufDB8fHx8MTYzMjg3MjE0OQ&amp;ixlib=rb-1.2.1q=85&amp;fm=jpg&amp;crop=faces&amp;cs=srgb&amp;w=600&amp;h=650&amp;fit=crop"
-              />
+            <Image
+                className="-mt-12 mb-4 rounded-lg"
+                src="/imran.jpg" alt="Cody Coolhair" width={200} height={200}
+                />
             </a>
           </div>
           <div className="mb-12 px-4 w-full md:-mt-24 md:w-6/12">
             <a className="block group rounded-lg" href="#">
-              <img
-                className="group-hover:opacity-80 mb-6 rounded-xl"
-                src="https://images.unsplash.com/photo-1609921212029-bb5a28e60960?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDUyfHxkZXNpZ25lcnxlbnwwfHx8fDE2MzI4Njk1ODY&amp;ixlib=rb-1.2.1q=85&amp;fm=jpg&amp;crop=faces&amp;cs=srgb&amp;w=600&amp;h=650&amp;fit=crop"
-              />
+            <Image
+                className="-mt-12 mb-4 rounded-lg"
+                src="/imran.jpg" alt="Cody Coolhair" width={200} height={200}
+                />
             </a>
           </div>
         </div>
@@ -62,26 +62,26 @@ const PortfolioSection = () => {
         <div className="flex flex-wrap -mx-4 justify-center">
           <div className="pb-4 pt-12 px-4 w-full md:w-6/12 lg:w-4/12">
             <div className="border border-primary-500 pb-6 pt-2 px-6 rounded">
-              <img
+              <Image
                 className="-mt-12 mb-4 rounded-lg"
-                src="https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDE5fHxkb2d8ZW58MHx8fA&ampixlib=rb-1.2.1q=85&amp;fm=jpg&amp;crop=faces&amp;cs=srgb&amp;w=400&amp;h=400&amp;fit=crop"
-              />
+                src="/imran.jpg" alt="Cody Coolhair" width={200} height={200}
+                />
             </div>
           </div>
           <div className="pb-4 pt-12 px-4 w-full md:w-6/12 lg:w-4/12">
             <div className="border border-primary-500 pb-6 pt-2 px-6 rounded">
-              <img
+            <Image
                 className="-mt-12 mb-4 rounded-lg"
-                src="https://images.unsplash.com/photo-1574158622682-e40e69881006?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDd8fGNhdHxlbnwwfHx8&amp;ixlib=rb-1.2.1q=85&amp;fm=jpg&amp;crop=faces&amp;cs=srgb&amp;w=400&amp;h=400&amp;fit=crop"
-              />
+                src="/imran.jpg" alt="Cody Coolhair" width={200} height={200}
+                />
             </div>
           </div>
           <div className="pb-4 pt-12 px-4 w-full md:w-6/12 lg:w-4/12">
             <div className="border border-primary-500 pb-6 pt-2 px-6 rounded">
-              <img
+            <Image
                 className="-mt-12 mb-4 rounded-lg"
-                src="https://images.unsplash.com/photo-1517101724602-c257fe568157?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDZ8fHBhcnJvdHxlbnwwfHx8&amp;ixlib=rb-1.2.1q=85&amp;fm=jpg&amp;crop=faces&amp;cs=srgb&amp;w=400&amp;h=400&amp;fit=crop"
-              />
+                src="/imran.jpg" alt="Cody Coolhair" width={200} height={200}
+                />
             </div>
           </div>
         </div>

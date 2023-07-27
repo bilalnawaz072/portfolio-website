@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Image from 'next/image';
 
 const AboutSection = ({pageName ,description ,project1,projectDetail }) => {
 
@@ -206,10 +206,13 @@ const AboutSection = ({pageName ,description ,project1,projectDetail }) => {
         </a>
       </div>
       <div className=" p-4 w-full lg:w-4/12">
-        <img
+        <Image
           className="rounded-xl w-full"
-          src="https://images.unsplash.com/photo-1613909207039-6b173b755cc1?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDV8fGRlc2lnbmVyfGVufDB8fHx8MTYzMjg2OTMwMA&ampixlib=rb-1.2.1q=85&ampfm=jpg&amp;crop=faces&amp;cs=srgb&amp;w=800&amp;h=1000&amp;fit=crop"
-        />
+          src={'/imran.jpg'}
+          alt="Imran"
+          width={500}
+          height={500}
+          />
       </div>
     </div>
   </div>
